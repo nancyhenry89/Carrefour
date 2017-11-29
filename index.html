@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Carrefour</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+</head>
+<body>
+    <section id=header>
+        <h1 class="logo">Carrefour</h1>
+        <div class="search">
+            <input type="text"><i class="fa fa-search" aria-hidden="true"></i>
+            </input>
+        </div>
+    </section>
+    <section id="signIn">
+        <div class="signIn">
+            <h2>Sign In Now</h2>
+            <div>Unlock awsome features!</div>
+            <form onsubmit="return validate()" method="post" name="signInForm">
+                <div class="authFailed">Invalid username or password</div>
+                <div id="username" class="formRow">
+                    <label>Username</label>
+                    <div class="required FO">Required Field</div>
+                    <input type="text" name="username" placeholder="username" />
+                </div>
+                <div id="password" class="formRow">
+                    <div class="required FO">Required Field</div>
+                    <input type="password" value="" placeholder="password" name="password" />
+                </div>
+                <div class="signInOptions">
+                    <label class="container">Keep me logged in
+                        <input type="checkbox" checked="checked" name="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <a class="FO" href="#">forgot password?</a>
+                </div>
+                <button class="button" type="submit">SIGN IN</button>
+            </form>
+        </div>
+    </section>
+    <section id="productList">
+        <div class="product">
+            <img src="img/product.png" alt="Product Image" />
+            <div class="productTitle">Iphone 6 black</div>
+            <div class="productPrice">AED 1000</div>
+        </div>
+        <div class="product">
+            <img src="img/product.png" alt="Product Image" />
+            <div class="productTitle">Iphone 7 black</div>
+            <div class="productPrice">AED 2000</div>
+        </div>
+        <div class="product">
+            <img src="img/product.png" alt="Product Image" />
+            <div class="productTitle">Iphone 8 black</div>
+            <div class="productPrice">AED 3000</div>
+        </div>
+    </section>
+</body>
+
+</html>
