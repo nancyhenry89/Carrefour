@@ -33,18 +33,10 @@ section#productList{margin-top:110px}
 .error input{border-color:#f52f3f;margin-top:0}
 .error .required{display:block}
 .authFailed{display:none;color:#f52f3f}
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #dddddd;
-}
-::-moz-placeholder { /* Firefox 19+ */
-  color: #dddddd;
-}
-:-ms-input-placeholder { /* IE 10+ */
-  color: #dddddd;
-}
-:-moz-placeholder { /* Firefox 18- */
-  color: #dddddd    ;
-}
+::-webkit-input-placeholder {color: #dddddd}
+::-moz-placeholder {color: #dddddd}
+:-ms-input-placeholder {color: #dddddd}
+:-moz-placeholder {color: #dddddd}
 @media screen and (max-device-width:768px) {
 .product{width:50%}
 .productTitle{text-align:center;font-size:18px}
